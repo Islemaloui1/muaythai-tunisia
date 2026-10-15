@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#09090b">
+
+    <meta name="description"
+          content="MTSA - Muay Thai Sports Association, Sidi Bouzid, Tunisie">
+
+    <title>MTSA | Muay Thai Sports Association</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+<!-- MTSA INTRO SCREEN -->
+<div id="intro-screen">
+
+    <img src="intro.png" alt="MTSA Muay Thai Sports Association">
+
+    <div class="intro-overlay"></div>
+<!-- Animated red energy -->
+<div class="intro-energy"></div>
+
+<!-- Moving light streaks -->
+<div class="intro-streak streak-one"></div>
+<div class="intro-streak streak-two"></div>
+<div class="intro-streak streak-three"></div>
+
+<!-- Cinematic corner decorations -->
+<div class="intro-corner intro-corner-tl"></div>
+<div class="intro-corner intro-corner-br"></div>
+    <div class="intro-content">
+        <span class="intro-line"></span>
+
+        <h1>MTSA</h1>
+
+        <p>MUAY THAI SPORTS ASSOCIATION</p>
+
+        <span class="intro-tagline">
+            DISCIPLINE · RESPECT · COURAGE
+        </span>
+    </div>
+
+    <div class="intro-loader">
+        <span></span>
+    </div>
+
+</div>
+    <!-- HEADER -->
+
+    <header class="header">
+
+        <a href="#home" class="logo">
+            <img src="logo.jpg" alt="Logo MTSA">
+
+            <span>
+                <strong>MTSA</strong>
+                <small>MUAY THAI SPORTS ASSOCIATION</small>
+            </span>
+        </a>
+
+        <button
+            id="menu-button"
+            class="menu-button"
+            aria-label="Ouvrir le menu"
+            aria-expanded="false">
+            ☰
+        </button>
+
+        <nav id="navigation">
+
+            <a href="#home"
+               data-fr="Accueil"
+               data-ar="الرئيسية">Accueil</a>
+
+            <a href="#about"
+               data-fr="Association"
+               data-ar="الجمعية">Association</a>
+
+            <a href="#values"
+               data-fr="Nos valeurs"
+               data-ar="قيمنا">Nos valeurs</a>
+
+            <a href="#gallery"
+               data-fr="Galerie"
+               data-ar="معرض الصور">Galerie</a>
+
+            <a href="#boutique"
+               data-fr="Tenue officielle"
+               data-ar="الزي الرسمي">Tenue officielle</a>
+
+            <a href="#infos"
+               data-fr="Informations"
+               data-ar="معلوماتنا">Informations</a>
+
+            <a href="#join"
+               data-fr="Inscription"
+               data-ar="التسجيل">Inscription</a>
+
+        </nav>
+
+        <button id="language-button" class="language-button">
+            عربي
+        </button>
+
+    </header>
+
+
+    <!-- MAIN -->
+
+    <main>
+
+        <!-- HERO -->
+
+        <section class="hero" id="home">
+
+            <img
+                src="hero.png"
+                alt="Combattants de Muay Thai"
+                class="hero-image">
+
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+
+                <p class="eyebrow"
+                   data-fr="TUNISIE · MUAY THAI · DEPUIS 2023"
+                   data-ar="تونس · مواي تاي · منذ 2023">
+                    TUNISIE · MUAY THAI · DEPUIS 2023
+                </p>
+
+                <h1
+                    data-fr="FORGÉS PAR LA DISCIPLINE."
+                    data-ar="نصنع القوة بالانضباط.">
+                    FORGÉS PAR LA DISCIPLINE.
+                </h1>
+
+                <p class="hero-description"
+                   data-fr="Plus qu'un sport. Un état d'esprit."
+                   data-ar="أكثر من رياضة، إنها عقلية وأسلوب حياة.">
+                    Plus qu'un sport. Un état d'esprit.
+                </p>
+
+                <a href="#join"
+                   class="button"
+                   data-fr="REJOINDRE MTSA ↗"
+                   data-ar="انضم إلى MTSA ↗">
+                    REJOINDRE MTSA ↗
+                </a>
+
+            </div>
+
+            <div class="hero-side-text">
+                DISCIPLINE / RESPECT / PROGRESSION
+            </div>
+
+            <div class="hero-counter">
+                <span>01</span> / 05
+            </div>
+
+        </section>
+
+
+        <!-- MARQUEE -->
+
+        <div class="marquee" aria-label="MTSA">
+            <div class="marquee-track">
+                <span>DISCIPLINE ✳ RESPECT ✳ COURAGE ✳</span>
+                <span>DISCIPLINE ✳ RESPECT ✳ COURAGE ✳</span>
+            </div>
+        </div>
+
+
+        <!-- ABOUT -->
+
+        <section class="section about" id="about">
+
+            <p class="section-number">01 / ABOUT MTSA</p>
+
+            <div class="about-grid">
+
+                <div>
+                    <h2
+                        data-fr="LE COMBAT SE JOUE AUSSI EN SOI."
+                        data-ar="المعركة تبدأ من الداخل.">
+                        LE COMBAT SE JOUE AUSSI EN SOI.
+                    </h2>
+                </div>
+
+                <div class="about-text">
+
+                    <p
+                        data-fr="Fondée en 2023, la Muay Thai Sports Association rassemble les passionnés de Muay Thai autour d'une même passion."
+                        data-ar="تأسست جمعية المواي تاي الرياضية سنة 2023 لتجمع عشاق هذه الرياضة حول شغف واحد.">
+                        Fondée en 2023, la Muay Thai Sports Association
+                        rassemble les passionnés de Muay Thai autour d'une même passion.
+                    </p>
+
+                    <p
+                        data-fr="Notre objectif est de promouvoir la discipline, le respect, la confiance et le dépassement de soi."
+                        data-ar="هدفنا نشر الانضباط والاحترام والثقة بالنفس وتجاوز الذات.">
+                        Notre objectif est de promouvoir la discipline,
+                        le respect, la confiance et le dépassement de soi.
+                    </p>
+
+                    <a href="#values"
+                       class="text-link"
+                       data-fr="DÉCOUVRIR NOS VALEURS ↗"
+                       data-ar="اكتشف قيمنا ↗">
+                        DÉCOUVRIR NOS VALEURS ↗
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- VALUES -->
+
+        <section class="section values" id="values">
+
+            <p class="section-number">02 / OUR VALUES</p>
+
+            <h2
+                data-fr="NOS VALEURS. NOTRE FORCE."
+                data-ar="قيمنا هي مصدر قوتنا.">
+                NOS VALEURS. NOTRE FORCE.
+            </h2>
+
+            <div class="cards">
+
+                <article class="card">
+                    <span class="card-number">01</span>
+
+                    <h3 data-fr="DISCIPLINE"
+                        data-ar="الانضباط">DISCIPLINE</h3>
+
+                    <p
+                        data-fr="Chaque entraînement est un pas vers le progrès."
+                        data-ar="كل حصة تدريبية هي خطوة نحو التقدم.">
+                        Chaque entraînement est un pas vers le progrès.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <span class="card-number">02</span>
+
+                    <h3 data-fr="RESPECT"
+                        data-ar="الاحترام">RESPECT</h3>
+
+                    <p
+                        data-fr="Respecter ses partenaires, son entraîneur et son adversaire."
+                        data-ar="احترام الزملاء والمدرب والمنافس.">
+                        Respecter ses partenaires, son entraîneur et son adversaire.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <span class="card-number">03</span>
+
+                    <h3 data-fr="PROGRESSION"
+                        data-ar="التطور">PROGRESSION</h3>
+
+                    <p
+                        data-fr="Repousser ses limites et devenir meilleur."
+                        data-ar="تجاوز حدودنا والسعي إلى أن نصبح أفضل.">
+                        Repousser ses limites et devenir meilleur.
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- GALLERY -->
+
+        <section class="section gallery" id="gallery">
+
+            <p class="section-number">03 / GALLERY</p>
+
+            <h2
+                data-fr="L'INTENSITÉ EN IMAGES."
+                data-ar="قوة اللحظة بالصورة.">
+                L'INTENSITÉ EN IMAGES.
+            </h2>
+
+            <p class="section-description"
+               data-fr="La passion, l'effort et l'esprit du Muay Thai."
+               data-ar="الشغف والجهد وروح المواي تاي.">
+                La passion, l'effort et l'esprit du Muay Thai.
+            </p>
+
+            <div class="gallery-grid">
+
+                <figure class="gallery-item gallery-large">
+                    <img src="fight-1.jpg"
+                         alt="Combat de Muay Thai">
+                    <figcaption>01 — THE FIGHT</figcaption>
+                </figure>
+
+                <figure class="gallery-item">
+                    <img src="fight-2.jpg"
+                         alt="Technique de combat">
+                    <figcaption>02 — THE TECHNIQUE</figcaption>
+                </figure>
+
+                <figure class="gallery-item">
+                    <img src="fight-3.jpg"
+                         alt="Entraînement de Muay Thai">
+                    <figcaption>03 — THE MINDSET</figcaption>
+                </figure>
+
+            </div>
+
+        </section>
+
+
+        <!-- OFFICIAL UNIFORM -->
+
+        <section class="section tenue" id="boutique">
+
+            <div class="tenue-content">
+
+                <div class="tenue-text">
+
+                    <span class="section-tag"
+                          data-fr="ÉQUIPEMENT OFFICIEL"
+                          data-ar="التجهيزات الرسمية">
+                        ÉQUIPEMENT OFFICIEL
+                    </span>
+
+                    <h2
+                        data-fr="PORTEZ LES COULEURS <span>MTSA</span>"
+                        data-ar="ارتدِ ألوان <span>MTSA</span>">
+                        PORTEZ LES COULEURS <span>MTSA</span>
+                    </h2>
+
+                    <p
+                        data-fr="Un uniforme, une équipe, une seule passion. Découvrez la tenue officielle de notre association de Muay Thaï."
+                        data-ar="زيّ واحد، فريق واحد، وشغف واحد. اكتشف الزيّ الرسمي لجمعية المواي تاي متاعنا.">
+                        Un uniforme, une équipe, une seule passion.
+                        Découvrez la tenue officielle de notre association de Muay Thaï.
+                    </p>
+
+                </div>
+
+                <div class="tenue-image">
+
+                    <img
+                        src="tenue.jpg"
+                        alt="Tenue officielle rouge et bleue de MTSA"
+                        loading="lazy">
+
+                    <div class="tenue-badge">
+                        <span>MTSA</span>
+
+                        <small
+                            data-fr="UNIS PAR LE SPORT"
+                            data-ar="يجمعنا حبّ الرياضة">
+                            UNIS PAR LE SPORT
+                        </small>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CLUB INFORMATION -->
+
+        <section class="section club-info" id="infos">
+
+            <p class="section-number">04 / CONTACT & INFORMATIONS</p>
+
+            <h2
+                data-fr="RENCONTRONS-NOUS."
+                data-ar="نحن في انتظاركم.">
+                RENCONTRONS-NOUS.
+            </h2>
+
+            <p class="section-description"
+               data-fr="Toutes les informations pour découvrir et rejoindre MTSA."
+               data-ar="كل المعلومات اللازمة للتعرّف على جمعيتنا والانضمام إليها.">
+                Toutes les informations pour découvrir et rejoindre MTSA.
+            </p>
+
+            <div class="info-grid">
+
+                <!-- EMAIL -->
+
+                <a href="mailto:mtbtunisia@gmail.com"
+                   class="info-card">
+
+                    <span class="info-icon">✉</span>
+
+                    <div>
+                        <small data-fr="E-MAIL"
+                               data-ar="البريد الإلكتروني">
+                            E-MAIL
+                        </small>
+
+                        <strong>mtbtunisia@gmail.com</strong>
+                    </div>
+
+                </a>
+
+
+                <!-- CITY -->
+
+                <div class="info-card">
+
+                    <span class="info-icon">📍</span>
+
+                    <div>
+                        <small data-fr="VILLE"
+                               data-ar="المدينة">
+                            VILLE
+                        </small>
+
+                        <strong
+                            data-fr="Sidi Bouzid, Tunisie"
+                            data-ar="سيدي بوزيد، تونس">
+                            Sidi Bouzid, Tunisie
+                        </strong>
+                    </div>
+
+                </div>
+
+
+                <!-- FOUNDATION -->
+
+                <div class="info-card">
+
+                    <span class="info-icon">🏆</span>
+
+                    <div>
+                        <small data-fr="FONDÉE EN"
+                               data-ar="تاريخ التأسيس">
+                            FONDÉE EN
+                        </small>
+
+                        <strong>2023</strong>
+                    </div>
+
+                </div>
+
+
+                <!-- HEADQUARTERS -->
+
+                <div class="info-card">
+
+                    <span class="info-icon">🥊</span>
+
+                    <div>
+                        <small data-fr="SIÈGE DE L'ASSOCIATION"
+                               data-ar="مقر الجمعية">
+                            SIÈGE DE L'ASSOCIATION
+                        </small>
+
+                        <strong
+                            data-fr="Fitness Time Gym, avenue de l'Union du Maghreb Arabe, en face de l'Institut mixte de Sidi Bouzid."
+                            data-ar="Fitness Time Gym، شارع اتحاد المغرب العربي، قبالة المعهد المختلط بسيدي بوزيد.">
+                            Fitness Time Gym, avenue de l'Union du Maghreb Arabe,
+                            en face de l'Institut mixte de Sidi Bouzid.
+                        </strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- JOIN -->
+
+        <section class="section join" id="join">
+
+            <p class="section-number">05 / JOIN MTSA</p>
+
+            <h2
+                data-fr="PRÊT À ENTRER DANS L'ARÈNE ?"
+                data-ar="هل أنت مستعد لدخول الحلبة؟">
+                PRÊT À ENTRER DANS L'ARÈNE ?
+            </h2>
+
+            <p class="section-description"
+               data-fr="Envoyez-nous votre demande pour rejoindre notre association."
+               data-ar="أرسل طلبك للانضمام إلى جمعيتنا.">
+                Envoyez-nous votre demande pour rejoindre notre association.
+            </p>
+
+            <form
+    id="join-form"
+    action="https://formsubmit.co/mtbtunisia@gmail.com"
+    method="POST">
+
+    <input type="hidden" name="_subject"
+           value="Nouvelle demande d'inscription - MTSA">
+
+    <input type="hidden" name="_captcha" value="true">
+
+    <input type="hidden" name="_template" value="table">
+
+                <label for="name"
+                       data-fr="Nom complet"
+                       data-ar="الاسم الكامل">
+                    Nom complet
+                </label>
+
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    required
+                    autocomplete="name"
+                    placeholder="Votre nom">
+
+
+                <label for="phone"
+                       data-fr="Téléphone"
+                       data-ar="رقم الهاتف">
+                    Téléphone
+                </label>
+
+                <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    required
+                    autocomplete="tel"
+                    placeholder="+216 ...">
+
+
+                <label for="email"
+                       data-fr="Adresse e-mail"
+                       data-ar="البريد الإلكتروني">
+                    Adresse e-mail
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    autocomplete="email"
+                    placeholder="exemple@email.com">
+
+
+                <label for="message"
+                       data-fr="Votre message"
+                       data-ar="رسالتك">
+                    Votre message
+                </label>
+
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="4"
+                    placeholder="..."></textarea>
+
+
+                <button
+                    type="submit"
+                    class="button"
+                    data-fr="ENVOYER MA DEMANDE ↗"
+                    data-ar="إرسال طلبي ↗">
+                    ENVOYER MA DEMANDE ↗
+                </button>
+
+                <p id="form-status" aria-live="polite"></p>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <a href="#home" class="footer-logo">
+            <img src="logo.jpg" alt="Logo MTSA">
+            <span>MTSA</span>
+        </a>
+
+        <p
+            data-fr="Muay Thai Sports Association · Sidi Bouzid, Tunisie"
+            data-ar="جمعية المواي تاي الرياضية · سيدي بوزيد، تونس">
+            Muay Thai Sports Association · Sidi Bouzid, Tunisie
+        </p>
+
+        <p>
+            © <span id="year"></span> MTSA
+        </p>
+
+    </footer>
+
+</body>
+</html>
